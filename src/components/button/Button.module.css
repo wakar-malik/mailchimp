@@ -1,0 +1,18 @@
+.buttonContainer {
+  border-radius: 2rem;
+  background-color: #000;
+  width: fit-content;
+}
+
+.buttonContainer .btn {
+  padding: 0.8rem 1.4rem;
+  font-size: 0.9rem;
+  border: 1px solid #000;
+  border-radius: 2rem;
+  transition: transform 0.2s;
+  font-family: var(--fontRegular);
+}
+
+.btn:hover {
+  transform: translateY(-5px);
+}

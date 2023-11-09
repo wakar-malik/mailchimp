@@ -1,0 +1,41 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: kalMedium;
+  src: url("./assets/fonts/Karla/static/Karla-Medium.ttf");
+}
+
+@font-face {
+  font-family: nunito;
+  src: url("./assets/fonts/Nunito/static/Nunito-Bold.ttf");
+}
+
+@font-face {
+  font-family: nunitoExBold;
+  src: url("./assets/fonts/Nunito/static/Nunito-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: nunitoLight;
+  src: url("./assets/fonts/Nunito/static/Nunito-Light.ttf");
+}
+
+#root {
+  position: relative;
+  overflow: hidden;
+}
+
+:root {
+  --black: #000;
+  --white: #fff;
+  --yellow: #ffe01b;
+  --orange: #e7b75f;
+
+  --fontRegular: kalMedium;
+  --fontBold: nunito;
+  --fontExBold: nunitoExBold;
+}

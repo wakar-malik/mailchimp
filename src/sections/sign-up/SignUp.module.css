@@ -1,0 +1,51 @@
+.signUpSection {
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.signUpHeading {
+  font-size: 3rem;
+  font-family: var(--fontBold);
+}
+
+.signUpPara {
+  font-family: var(--fontRegular);
+  font-size: 1.6rem;
+  text-align: center;
+  width: 50%;
+  margin: 0.5rem 0 3rem;
+}
+
+@media screen and (max-width: 1440px) {
+  .signUpPara {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .signUpSection {
+    padding: 5rem 1rem;
+  }
+
+  .signUpHeading {
+    font-size: 1.8rem;
+  }
+
+  .signUpPara {
+    font-size: 1rem;
+    margin: 0.5rem 0 2rem;
+  }
+
+  .signUpPara {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .signUpPara {
+    width: 100%;
+  }
+}

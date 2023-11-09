@@ -1,0 +1,10 @@
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--black);
+  color: var(--white);
+  padding: 0.7rem;
+  font-family: var(--fontRegular);
+}

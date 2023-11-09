@@ -1,0 +1,48 @@
+.navContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  font-family: var(--fontRegular);
+}
+
+.navLeft,
+.navRight {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+.navRight {
+  justify-content: flex-end;
+}
+
+@media screen and (min-width: 1231px) {
+  .menuBtn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1230px) {
+  .dropDown,
+  .signUpBtn,
+  .tele,
+  .translator,
+  .searchIcon {
+    display: none;
+  }
+
+  .navRight {
+    width: auto;
+  }
+
+  .navLeft {
+    flex-grow: 1;
+    justify-content: space-between;
+  }
+
+  .navContainer {
+    gap: 1.4rem;
+  }
+}
