@@ -2,9 +2,9 @@ import React from "react";
 import Logo from "../../components/logo/Logo";
 import styles from "./Navbar.module.css";
 import Button from "../../components/button/Button";
-import { IoMdSearch } from "react-icons/io";
 import MenuBtn from "../../components/menu-btn/MenuBtn";
 import DrawerContainer from "../../components/drawer/Drawer";
+import { IoMdSearch } from "react-icons/io";
 
 function Navbar() {
   return (

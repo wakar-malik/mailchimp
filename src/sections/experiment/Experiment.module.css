@@ -55,9 +55,9 @@
 .refine .expHeading,
 .optimize .expHeading {
   position: absolute;
-  left: 1.5rem;
-  top: 1.5rem;
-  right: 1.5rem;
+  left: 2rem;
+  top: 2rem;
+  right: 2rem;
   font-family: var(--fontBold);
   z-index: 1;
 }
@@ -66,7 +66,7 @@
 .subCreate,
 .subRefine,
 .subOptimize {
-  padding: 1rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -109,7 +109,7 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 630px) {
   .experimentSection {
     grid-template-columns: 1fr;
   }
