@@ -1,5 +1,38 @@
 .getStartedSection {
+  padding: 4rem 0;
+}
+
+.getStartedContainer {
+  width: 80%;
+  /* background-color: #7a7a7a; */
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 3rem;
+  margin: auto;
+}
+
+.getStartedLeft,
+.getStartedRight {
+  width: 50%;
+}
+
+.getStarted {
+  width: 100%;
+}
+
+@media screen and (max-width: 1100px) {
+  .getStartedContainer {
+    width: 100%;
+    flex-direction: column;
+  }
+  .getStartedLeft,
+  .getStartedRight {
+    width: 100%;
+    text-align: center;
+  }
+
+  .getStartedContainer {
+    padding: 4rem 2rem;
+  }
 }
