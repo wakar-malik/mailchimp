@@ -1,0 +1,96 @@
+.pricingSection {
+  padding: 4rem 0;
+  background-color: #f6f6f4;
+}
+
+.pricingContainer {
+  /* background-color: #7a7a7a; */
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: stretch;
+  margin: 3rem auto 0;
+}
+
+.pricingSectionSubTitle {
+  text-align: center;
+}
+
+.pricingSectionHeading {
+  text-align: center;
+  margin-top: 1rem;
+  line-height: 1;
+}
+
+.pricingSectionHeading span {
+  border-bottom: 10px solid var(--yellow);
+}
+
+.priceCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  border: 1px solid var(--black);
+  position: relative;
+}
+
+.priceCard:hover {
+  box-shadow: 0 0 6px 2px #c8c8c8;
+}
+
+.pricingCardHeading {
+  margin-bottom: 1rem;
+}
+
+.pricingCardText {
+  margin-bottom: 2rem;
+}
+
+.perksList {
+  list-style: none;
+}
+
+.perksList li p {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.perksList li:not(:last-child) {
+  border-bottom: 1px solid #c7c7c7;
+}
+
+.priceCardPriceText {
+  margin-bottom: 0.2rem;
+}
+
+.recommendedText {
+  width: fit-content;
+  background-color: var(--yellow);
+  color: var(--white);
+  padding: 0.4rem 0.8rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+@media screen and (max-width: 1300px) {
+  .pricingSection {
+    padding: 4rem 2rem;
+  }
+
+  .pricingContainer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .pricingContainer {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+}
