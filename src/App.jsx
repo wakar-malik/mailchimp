@@ -5,6 +5,8 @@ import Button from "./components/button/Button";
 import Login from "./pages/login/Login";
 import SignUp from "./sections/sign-up/SignUp";
 import { useSelector } from "react-redux";
+import Experiment from "./sections/experiment/Experiment";
+import GetStarted from "./sections/get-started/GetStarted";
 
 function App() {
   const login = useSelector((state) => state.login);
@@ -16,6 +18,8 @@ function App() {
       <Header />
       <Navbar />
       {!login.isLoggedIn && <SignUp />}
+      <Experiment />
+      <GetStarted />
     </div>
   );
 }

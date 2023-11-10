@@ -1,0 +1,123 @@
+.experimentSection {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.convert,
+.create,
+.refine,
+.optimize {
+  display: grid;
+  grid-template-rows: auto 220px;
+  position: relative;
+  overflow: hidden;
+}
+
+.convertImgSection,
+.createImgSection,
+.refineImgSection,
+.createImgSection {
+  height: 100%;
+  overflow: hidden;
+}
+
+.imgContainer {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.convert:hover .imgContainer img,
+.create:hover .imgContainer img,
+.refine:hover .imgContainer img,
+.optimize:hover .imgContainer img {
+  transform: scale(1.1);
+}
+
+.convert:hover .expHeading,
+.create:hover .expHeading,
+.refine:hover .expHeading,
+.optimize:hover .expHeading {
+  text-decoration: underline;
+}
+
+.convertImg,
+.createImg,
+.refineImg,
+.optimizeImg {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.4s;
+}
+
+.convert .expHeading,
+.create .expHeading,
+.refine .expHeading,
+.optimize .expHeading {
+  position: absolute;
+  left: 1.5rem;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-family: var(--fontBold);
+  z-index: 1;
+}
+
+.subConvert,
+.subCreate,
+.subRefine,
+.subOptimize {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.subConvert p,
+.subCreate p,
+.subRefine p,
+.subOptimize p {
+  margin-bottom: 2.5rem;
+  font-family: var(--fontRegular);
+}
+
+.convert {
+  background-color: #d99536;
+}
+
+.create {
+  background-color: #f6f6f4;
+}
+
+.refine {
+  background-color: #e7b75f;
+}
+
+.optimize {
+  background-color: #fbeeca;
+}
+
+@media screen and (max-width: 1150px) {
+  .experimentSection {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .convert,
+  .create,
+  .refine,
+  .optimize {
+    grid-template-rows: auto 200px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .experimentSection {
+    grid-template-columns: 1fr;
+  }
+
+  .convert,
+  .create,
+  .refine,
+  .optimize {
+    grid-template-rows: auto 180px;
+  }
+}
