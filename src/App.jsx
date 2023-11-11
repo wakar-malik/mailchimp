@@ -8,12 +8,12 @@ import { useSelector } from "react-redux";
 import Experiment from "./sections/experiment/Experiment";
 import GetStarted from "./sections/get-started/GetStarted";
 import Pricing from "./sections/pricing/Pricing";
-import ArrowButton from "./components/arrow-button/ArrowButton";
+import GenerateCustomer from "./sections/generate-customer/GenerateCustomer";
+import Integrations from "./sections/integrations/Integrations";
+import Disclaimer from "./sections/disclaimer/Disclaimer";
 
 function App() {
   const login = useSelector((state) => state.login);
-
-  console.log(login);
 
   return (
     <div>
@@ -23,7 +23,9 @@ function App() {
       <Experiment />
       <GetStarted />
       <Pricing />
-      <ArrowButton>Arrow Btn</ArrowButton>
+      <Integrations />
+      <Disclaimer />
+      {/* <GenerateCustomer /> */}
     </div>
   );
 }

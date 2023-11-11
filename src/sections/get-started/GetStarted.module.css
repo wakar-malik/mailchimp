@@ -25,6 +25,10 @@
   width: 100%;
 }
 
+.getStartedLeft p {
+  margin-bottom: 2rem;
+}
+
 @media screen and (max-width: 1300px) {
   .getStartedContainer {
     width: 90%;
@@ -36,7 +40,7 @@
     text-align: center;
   }
 
-  .getStartedContainer {
+  .getStartedSection {
     padding: 4rem 2rem;
   }
 }

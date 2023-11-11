@@ -100,7 +100,7 @@ function Pricing() {
       </Heading>
       <Section className={styles.pricingContainer}>
         {pricingData.map((price) => (
-          <Card className={styles.priceCard}>
+          <Card className={styles.priceCard} key={price.id}>
             {price.recommended && (
               <Text className={styles.recommendedText} size={0.8}>
                 Recommended
