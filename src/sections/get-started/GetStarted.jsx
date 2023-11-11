@@ -11,7 +11,7 @@ function GetStarted() {
     <Section className={styles.getStartedSection}>
       <Section className={styles.getStartedContainer}>
         <div className={styles.getStartedLeft}>
-          <Heading size={3} mb={1.5}>
+          <Heading size={3} className={styles.getStartedHeading}>
             Get started easily with a personalized product tour
           </Heading>
           <Text size={1.4}>

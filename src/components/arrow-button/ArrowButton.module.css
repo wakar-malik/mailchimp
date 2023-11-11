@@ -1,0 +1,51 @@
+.arrowBtn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.3rem;
+  border-radius: 2rem;
+  font-family: var(--fontRegular);
+  border: none;
+  background-color: transparent;
+  gap: 0.5rem;
+  font-size: 1rem;
+  width: fit-content;
+  position: relative;
+  overflow: hidden;
+  transition: padding 0.3s;
+}
+
+.arrowBtn span {
+  z-index: 2;
+  transition: padding 0.3s;
+}
+
+.arrowBtn::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  background-color: yellow;
+  width: calc(100% - 74%);
+  right: 0;
+  z-index: 1;
+  border-radius: 2rem;
+  transition: width transform 0.3s;
+  transform: translateX(0);
+}
+
+.arrowIcon {
+  z-index: 2;
+  font-size: 1.2rem;
+}
+
+.arrowBtn:hover .arrowIcon {
+  transform: translateX(-3px);
+}
+
+.arrowBtn:hover::after {
+  width: 100%;
+}
+
+.arrowBtn:hover {
+  padding: 0.3rem 0.3rem 0.3rem 0.6rem;
+}

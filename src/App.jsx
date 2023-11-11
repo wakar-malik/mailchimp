@@ -7,6 +7,8 @@ import SignUp from "./sections/sign-up/SignUp";
 import { useSelector } from "react-redux";
 import Experiment from "./sections/experiment/Experiment";
 import GetStarted from "./sections/get-started/GetStarted";
+import Pricing from "./sections/pricing/Pricing";
+import ArrowButton from "./components/arrow-button/ArrowButton";
 
 function App() {
   const login = useSelector((state) => state.login);
@@ -20,6 +22,8 @@ function App() {
       {!login.isLoggedIn && <SignUp />}
       <Experiment />
       <GetStarted />
+      <Pricing />
+      <ArrowButton>Arrow Btn</ArrowButton>
     </div>
   );
 }
