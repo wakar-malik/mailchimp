@@ -8,6 +8,7 @@ import { useSelector } from "react-redux";
 import Experiment from "./sections/experiment/Experiment";
 import GetStarted from "./sections/get-started/GetStarted";
 import Pricing from "./sections/pricing/Pricing";
+import ArrowButton from "./components/arrow-button/ArrowButton";
 
 function App() {
   const login = useSelector((state) => state.login);
@@ -22,6 +23,7 @@ function App() {
       <Experiment />
       <GetStarted />
       <Pricing />
+      <ArrowButton>Arrow Btn</ArrowButton>
     </div>
   );
 }
