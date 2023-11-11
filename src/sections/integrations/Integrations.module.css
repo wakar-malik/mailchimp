@@ -1,0 +1,60 @@
+.integrationsSection {
+  padding: 4rem 0;
+}
+
+.integrationsContainer {
+  width: 70%;
+  margin: auto;
+}
+
+.integrationsCardContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 2rem 0;
+}
+
+.integrationsCard {
+  padding: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.integrationsCard:hover {
+  background-color: #241c150d;
+}
+
+.integrationsCardImg {
+  width: 100px;
+  height: 100px;
+}
+
+.integrationsCardHeading {
+  margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 1405px) {
+  .integrationsCardContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .integrationsSection {
+    padding: 4rem 2rem;
+  }
+
+  .integrationsContainer {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .integrationsContainer {
+    width: 100%;
+  }
+
+  .integrationsCardContainer {
+    grid-template-columns: 1fr;
+  }
+}

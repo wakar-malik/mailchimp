@@ -1,0 +1,34 @@
+.disclaimerSection {
+  padding: 4rem 0;
+}
+
+.disclaimerContainer {
+  width: 70%;
+  margin: auto;
+}
+
+.disclaimerContainer ul {
+  list-style: none;
+}
+
+.disclaimerContainer li {
+  font-family: var(--fontRegular);
+  margin: 0.4rem 0;
+}
+
+@media screen and (max-width: 1300px) {
+  .disclaimerSection {
+    padding: 4rem 2rem;
+  }
+
+  .disclaimerContainer {
+    width: 90%;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .disclaimerContainer {
+    width: 100%;
+  }
+}
