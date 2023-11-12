@@ -1,0 +1,39 @@
+.customersContainer {
+  display: flex;
+  align-items: stretch;
+}
+
+.customersLeft,
+.customersRight {
+  width: 50%;
+}
+
+.customersLeft {
+  background-color: #e7b75f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.customersImg {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 1300px) {
+  .customersLeft {
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .customersContainer {
+    flex-direction: column;
+  }
+
+  .customersLeft,
+  .customersRight {
+    width: 100%;
+  }
+}
