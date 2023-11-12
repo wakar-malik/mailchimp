@@ -12,6 +12,7 @@ import GenerateCustomer from "./sections/generate-customer/GenerateCustomer";
 import Integrations from "./sections/integrations/Integrations";
 import Disclaimer from "./sections/disclaimer/Disclaimer";
 import Customers from "./sections/customers/Customers";
+import Footer from "./sections/footer/Footer";
 
 function App() {
   const login = useSelector((state) => state.login);
@@ -27,7 +28,7 @@ function App() {
       <Customers />
       <Integrations />
       <Disclaimer />
-      {/* <GenerateCustomer /> */}
+      <Footer />
     </div>
   );
 }

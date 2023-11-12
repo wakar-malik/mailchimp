@@ -34,7 +34,8 @@
   --white: #fff;
   --yellow: #ffe01b;
   --orange: #e7b75f;
-
+  --footerBg: #e7b75f;
+  --hoverBg: #ffe01ba6;
   --fontRegular: kalMedium;
   --fontBold: nunito;
   --fontExBold: nunitoExBold;
