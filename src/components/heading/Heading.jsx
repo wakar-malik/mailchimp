@@ -1,7 +1,13 @@
 import React from "react";
 import styles from "./Heading.module.css";
 
-function Heading({ children, size = 1, className = "", lineHeight = 1 }) {
+function Heading({
+  children,
+  size = 1,
+  className = "",
+  lineHeight = 1,
+  block = false,
+}) {
   const classes = `${styles.heading} ${className}`;
 
   return (

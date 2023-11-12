@@ -1,0 +1,29 @@
+.accordionList {
+  list-style: none;
+  width: 50%;
+}
+
+.accordionListItem {
+  cursor: pointer;
+  padding: 2rem 0;
+}
+
+.accordionListItem:not(:last-child) {
+  border-bottom: 1px solid var(--black);
+}
+
+.accordionContent {
+  margin-top: 2rem;
+}
+
+.accordionHeading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1300px) {
+  .accordionList {
+    width: 100%;
+  }
+}

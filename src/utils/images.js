@@ -13,6 +13,9 @@ import shopify from "../assets/images/integrations/shopify.avif";
 import squarespace from "../assets/images/integrations/squarespace.avif";
 import woocommerce from "../assets/images/integrations/woocommerce.avif";
 import zapier from "../assets/images/integrations/zapier.avif";
+import customers1 from "../assets/images/customers1.jpg";
+import customers2 from "../assets/images/customers2.jpg";
+import customers3 from "../assets/images/customers3.avif";
 
 export default {
   convert,
@@ -30,4 +33,7 @@ export default {
   woocommerce,
   zapier,
   canva,
+  customers1,
+  customers2,
+  customers3,
 };

@@ -1,3 +1,9 @@
 .heading {
   font-family: var(--fontBold);
 }
+
+@media screen and (min-width: 1300px) {
+  .heading span {
+    display: block;
+  }
+}
