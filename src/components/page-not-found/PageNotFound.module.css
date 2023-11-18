@@ -1,0 +1,12 @@
+.errorSection {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+.errorHeading {
+  font-family: var(--fontExBold);
+  margin-bottom: 3rem;
+}

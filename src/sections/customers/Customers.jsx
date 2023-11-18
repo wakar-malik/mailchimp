@@ -22,8 +22,6 @@ function Customers() {
   const [customer, setCustomer] = useState(0);
 
   const handleAccordion = (num) => {
-    console.log(num);
-
     setCustomer(num);
   };
 

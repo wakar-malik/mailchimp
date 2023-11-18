@@ -96,7 +96,7 @@ function Pricing() {
         Limited Time Offer
       </Text>
       <Heading size={3} className={styles.pricingSectionHeading}>
-        Save <span>50%</span> for 12 months
+        Save <em>50%</em> for 12 months
       </Heading>
       <Section className={styles.pricingContainer}>
         {pricingData.map((price) => (

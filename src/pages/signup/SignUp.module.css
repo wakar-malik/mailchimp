@@ -1,4 +1,4 @@
-.loginSection {
+.signUpSection {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8,7 +8,7 @@
   padding: 0 2rem;
 }
 
-.loginHeading {
+.signUpHeading {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -16,18 +16,13 @@
   margin-bottom: 2rem;
 }
 
-.loginHeading a:nth-child(2) {
+.signUpHeading a:nth-child(2) {
   font-size: 1rem;
 }
 
-.loginSection form {
+.signUpSection form {
   margin-top: 2rem;
   width: 30%;
-}
-
-.loginSuccess {
-  margin-bottom: 1.3rem;
-  color: green;
 }
 
 .input {
@@ -49,14 +44,24 @@
   font-size: 1.6rem;
 }
 
-.loginBtnContainer {
+.signUpBtnContainer {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
+.errorMessage {
+  color: red;
+  margin-bottom: 2rem;
+}
+
+.successMessage {
+  color: green;
+  margin-bottom: 2rem;
+}
+
 @media screen and (max-width: 768px) {
-  .loginSection form {
+  .signUpSection form {
     width: 100%;
   }
 }

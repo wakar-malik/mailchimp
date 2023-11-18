@@ -2,6 +2,7 @@ import React from "react";
 import Section from "../../components/section/Section";
 import styles from "./SignUp.module.css";
 import Button from "../../components/button/Button";
+import { Link } from "react-router-dom";
 
 function SignUp() {
   return (
@@ -12,7 +13,9 @@ function SignUp() {
         that recommends ways to get more opens, clicks, and sales.
       </p>
 
-      <Button bg={true}>Sign Up</Button>
+      <Link to="/sign-up">
+        <Button bg={true}>Sign Up</Button>
+      </Link>
     </Section>
   );
 }

@@ -1,46 +1,49 @@
 import React, { useState, useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
 import Section from "../../components/section/Section";
-import styles from "./Login.module.css";
+import styles from "./SignUp.module.css";
 import Button from "../../components/button/Button";
 import Heading from "../../components/heading/Heading";
 import { Link, useNavigate } from "react-router-dom";
-import { logIn } from "../../slices/loginSlice";
 import Text from "../../components/text/Text";
+import { useDispatch } from "react-redux";
+import { logIn } from "../../slices/loginSlice";
 
-function Login() {
+function SignUp() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const dispatch = useDispatch();
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState(false);
   const navigate = useNavigate();
-  const { isLoggedIn } = useSelector((state) => state.login);
+  const dispatch = useDispatch();
 
-  const handleLogin = (e) => {
+  const handleSignUp = (e) => {
     e.preventDefault();
 
     if (!email.includes("@") || password.length < 6) {
-      alert("provide proper details...");
+      setError(true);
       return;
     }
 
-    const user = { email, password };
+    localStorage.setItem("user", JSON.stringify({ email, password }));
 
-    dispatch(logIn(user));
+    setError(false);
+    setSuccess(true);
+    dispatch(logIn({ email, password }));
   };
 
   useEffect(() => {
-    if (isLoggedIn) {
+    if (success) {
       navigate("/");
     }
-  }, [isLoggedIn]);
+  }, [success]);
 
   return (
-    <Section className={styles.loginSection}>
-      <form onSubmit={handleLogin}>
-        <Heading size={2} className={styles.loginHeading}>
-          <span>Login</span>
-          <Link to="/sign-up">
-            <span>Create Account</span>
+    <Section className={styles.signUpSection}>
+      <form onSubmit={handleSignUp}>
+        <Heading size={2} className={styles.signUpHeading}>
+          <span>Sign Up</span>
+          <Link to="/login">
+            <span>Login</span>
           </Link>
         </Heading>
         <label htmlFor="email" className={styles.label}>
@@ -65,23 +68,30 @@ function Login() {
           className={styles.input}
         />
         <br />
-
-        {isLoggedIn && (
-          <Text className={styles.loginSuccess} size={1.3}>
-            Login successful...
+        {error && (
+          <Text size={1.3} className={styles.errorMessage}>
+            Email should have (@) and password should be of 6 characters long...
           </Text>
         )}
 
-        <div className={styles.loginBtnContainer}>
+        {success && (
+          <Text size={1.3} className={styles.successMessage}>
+            Sign-up successful...
+          </Text>
+        )}
+
+        <div className={styles.signUpBtnContainer}>
           <Link to="/">
             <Button>Home</Button>
           </Link>
 
-          <Button className={styles.loginBtn}>Login</Button>
+          <Button className={styles.signUpBtn} type="submit">
+            Sign Up
+          </Button>
         </div>
       </form>
     </Section>
   );
 }
 
-export default Login;
+export default SignUp;

@@ -9,7 +9,6 @@ function GenerateCustomer() {
   const [intersecting, setIntersecting] = useState(false);
 
   const containerRef = useRef(null);
-  console.log(containerRef);
 
   const options = {
     root: null,
@@ -18,7 +17,6 @@ function GenerateCustomer() {
   };
 
   const callBackFn = (entries) => {
-    console.log(entries);
     const [entry] = entries;
 
     setIntersecting(entry.isIntersecting);

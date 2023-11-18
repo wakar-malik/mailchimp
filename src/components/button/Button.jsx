@@ -7,6 +7,8 @@ function Button({
   bg = false,
   bgColor = "#fff",
   mt = 0,
+  onClick = () => {},
+  type = "",
 }) {
   const classes = `${className} ${styles.buttonContainer}`;
 
@@ -17,6 +19,8 @@ function Button({
         style={{
           backgroundColor: bg ? "var(--yellow)" : bgColor,
         }}
+        onClick={onClick}
+        type="submit"
       >
         {children}
       </button>

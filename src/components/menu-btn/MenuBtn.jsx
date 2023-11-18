@@ -1,14 +1,15 @@
 import React from "react";
 import { IoMdMenu } from "react-icons/io";
 import styles from "./MenuBtn.module.css";
-import { drawerCtxProvider } from "../../context/DrawerContext";
+import { handleDrawer } from "../../slices/drawerSlice";
+import { useDispatch, useSelector } from "react-redux";
 
 function MenuBtn({ className }) {
-  const { setIsDrawerActive } = drawerCtxProvider();
   const classes = `${styles.menuIcon} ${className}`;
+  const dispatch = useDispatch();
 
   return (
-    <div onClick={() => setIsDrawerActive((prev) => !prev)}>
+    <div onClick={() => dispatch(handleDrawer())}>
       <IoMdMenu className={classes} />
     </div>
   );

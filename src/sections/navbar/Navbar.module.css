@@ -29,7 +29,9 @@
   .signUpBtn,
   .tele,
   .translator,
-  .searchIcon {
+  .searchIcon,
+  .loginBtn,
+  .signOutBtn {
     display: none;
   }
 
