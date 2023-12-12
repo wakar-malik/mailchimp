@@ -1,4 +1,4 @@
-<h1>Exact replica of Mailchimp's website, demonstrating precision in front-end development and design prowess.</h1>
+<p>Exact replica of Mailchimp's website, demonstrating precision in front-end development and design prowess.</p>
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) 
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) 
